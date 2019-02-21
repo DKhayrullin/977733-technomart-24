@@ -9,7 +9,7 @@
     <section class="header-topmenu">
       <img class="header-topmenu_logo" src="img/logo.svg" alt="Логотип «Техномарт»"></img>
       <p class="Search">Поиск</p>
-      <div class="header-order">
+      <div class="header-order"> <!--not ready-->
         <p class="header-topmenu header-order_bookmarks">Закладки: 0</p>
         <p class="header-topmenu header-order_cart">Корзина: 0</p>
         <a class="header-topmenu header-order_checkout">Оформить заказ</a>
@@ -17,8 +17,10 @@
     </section>
     <section class="header-lightbg">
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <p><span class="header-lightbg_phone">+7 (812) 555-05-55</span><br>
-			<span class="header-lightbg_adress">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</span></p>
+      <p>
+        <span class="header-lightbg_phone">+7 (812) 555-05-55</span><br>
+			  <span class="header-lightbg_adress">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</span>
+      </p>
       <ul class="user-navigation">
         <li class="login-link">Войти</li>
         <li class="registration-link">Регистрация</li>
@@ -51,6 +53,21 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр</h2>
       <!-- Форма фильтра -->
+      <form class="brand-filter" multiple>
+        <label>
+          <input type="checkbox" name="brand" value="bosch" checked>Bosch
+        </label><br>
+        <label><input type="checkbox" name="brand" value="interskol">Интрескол</label><br>
+        <label><input type="checkbox" name="brand" value="makita" checked>Makita</label><br>
+        <label><input type="checkbox" name="brand" value="dewalt">DeWalt</label><br>
+        <label><input type="checkbox" name="brand" value="hitachi">Hitachi</label><br>
+
+        <label><input type="radio" name="power-source" value="battery-ps">Акуумуляторные</label><br>
+        <label><input type="radio" name="power-source" value="network-ps" />Сетевые</label><br>
+
+        <input type="submit" value="Показать"></input>
+      </form>
+
     </section>
     <section class="catalog">
       <h3 class="visually-hidden">Каталог перфораторов</h3>
@@ -59,7 +76,7 @@
         <li>
           <article class="itemcard">
             <h3>Перфоратор Bosch BFG 3000</h3>
-            <img src="#" alt="Image: Bosch BFG 3000">
+            <img src="img/Bosch_BFG_3000.png" alt="Image: Bosch BFG 3000">
             <div class="item-price">
               <p>
                 <span class="item-price--old">22500 &#8381;</span><br>
@@ -71,7 +88,7 @@
         <li>
           <article class="itemcard">
             <h4>Перфоратор Bosch BFG 6000</h4>
-            <img src="#" alt="Image: Bosch BFG 6000">
+            <img src="img/Bosch_BFG_6000.png" alt="Image: Bosch BFG 6000">
             <div class="item-price">
               <p>
                 <span class="item-price--old">30500 &#8381;</span><br>
@@ -81,10 +98,10 @@
           </article>
         </li>
         <li>
-          <article class="itemcard--new">
+          <article class="itemcard--new"> <!-- Нью-флаг указать в цсс?-->
             <h4>Перфоратор Bosch BFG 2000</h4>
-            <a class="button-buy">Купить</a>
-            <a class="button-bookmarks">В закладки</a>
+            <img src="img/Bosch_BFG_2000.png" alt="Image: Bosch BFG 2000">            
+
             <div class="item-price">
               <p><span class="item-price">12500 &#8381;</span></p>
             </div>
@@ -94,7 +111,7 @@
         <li>
           <article class="itemcard">
             <h4>Перфоратор Bosch BFG 3000</h4>
-            <img src="#" alt="Image: Bosch BFG 3000">
+            <img src="img/Bosch_BFG_3000.png" alt="Image: Bosch BFG 3000">
             <div class="item-price">
               <p>
                 <span class="item-price--old">22500 &#8381;</span><br>
@@ -106,7 +123,7 @@
         <li>
           <article class="itemcard--new">
             <h4>Перфоратор Bosch BFG 6000</h4>
-            <img src="#" alt="Image: Bosch BFG 6000">
+            <img src="img/Bosch_BFG_6000.png" alt="Image: Bosch BFG 6000">
             <div class="item-price">
               <p>
                 <span class="item-price--old">30500 &#8381;</span><br>
@@ -118,8 +135,7 @@
         <li>
           <article class="itemcard">
             <h4>Перфоратор Bosch BFG 2000</h4>
-            <a class="button-buy">Купить</a>
-            <a class="button-bookmarks">В закладки</a>
+            <img src="img/Bosch_BFG_2000.png" alt="Image: Bosch BFG 2000">
             <div class="item-price">
               <p><span class="item-price">12500 &#8381;</span></p>
             </div>
@@ -129,7 +145,7 @@
         <li>
           <article class="itemcard--new">
             <h4>Перфоратор Bosch BFG 3000</h4>
-            <img src="#" alt="Image: Bosch BFG 3000">
+            <img src="img/Bosch_BFG_3000.png" alt="Image: Bosch BFG 3000">
             <div class="item-price">
               <p>
                 <span class="item-price--old">22500 &#8381;</span><br>
@@ -141,7 +157,7 @@
         <li>
           <article class="itemcard">
             <h4>Перфоратор Bosch BFG 6000</h4>
-            <img src="#" alt="Image: Bosch BFG 6000">
+            <img src="img/Bosch_BFG_6000.png" alt="Image: Bosch BFG 6000">
             <div class="item-price">
               <p>
                 <span class="item-price--old">30500 &#8381;</span><br>
@@ -153,8 +169,7 @@
         <li>
           <article class="itemcard">
             <h4>Перфоратор Bosch BFG 2000</h4>
-            <a class="button-buy">Купить</a>
-            <a class="button-bookmarks">В закладки</a>
+            <img src="img/Bosch_BFG_2000.png" alt="Image: Bosch BFG 2000">
             <div class="item-price">
               <p><span class="item-price">12500 &#8381;</span></p>
             </div>
@@ -164,6 +179,10 @@
     </section>
     <!-- Форма страниц -->
     <!-- Форма сервис -->
+    <form class="catalog-onclick-popup"> <!--Возможно придётся переделать-->
+      <input type="button" class="button-buy">Купить</input>
+      <button type="button" class="button-bookmarks">В закладки</button>
+    </form>
   </main>
   <footer class="main-footer">
     <section class="footer-nav">
