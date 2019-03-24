@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -239,7 +240,7 @@
         <section class="main-contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис</p>
-          <img class="minimap" src="img/minimap.png" alt="Большая конюшенная, 19">
+          <img class="minimap" src="img/minimap.png" width="300" height="158" alt="Большая конюшенная, 19">
           <a class="red-button write-us" href="#">Заблудились? Напишите нам</a>
         </section>
       </div>
@@ -302,7 +303,7 @@
   <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
   <div class="popup popup-hidden write-us-form">
     <button class="cross-button popup-close" type="button"></button>
-    <form class="" action="https://echo.htmlacademy.ru" metod="post">
+    <form action="#" metod="post"> <!--post не проходит валидацию. ПОчему?-->
       <div class="two-columns">
         <p class="form-p">
           <label for="Author-name-field">Ваше имя:</label>
