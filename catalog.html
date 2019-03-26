@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -20,10 +21,9 @@
         </form>
         <div class="header-order">
           <!--not ready-->
-          <a class="header-order-bookmarks-empty" href="bookmarks.html"><span>Закладки: 0</span></a>
+          <a class="header-order-bookmarks-empty" href="bookmarks.html">Закладки: 0</></a>
           <a class="header-order-cart-empty cart-filled" href="cart.html">Корзина: 10</a>
           <a class="header-order-checkout-empty" href="checkout.html">Оформить заказ</a>
-
         </div>
       </div>
     </div>
@@ -31,9 +31,8 @@
       <div class="designwidth header-middlemenu">
         <h2 class="header-title">Интернет-магазин строительных материалов и&#160;инструментов для ремонта</h2>
         <div class="header-contacts">
-          <span class="header-lightbg-phone" aria-label="Наш контактный телефон">+7 (812) 555-05-55</span><br>
+          <span class="header-lightbg-phone" aria-label="Наш контактный телефон">+7 (812) 555-05-55</span>
           <span class="header-lightbg-adress" aria-label="Наш адрес">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-
         </div>
         <section class="user-navigation">
           <h2 class="visually-hidden">Навигация пользователя</h2>
@@ -47,10 +46,8 @@
 
               <path fill="#c5c5c5" d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
                           v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z" />
-
                   </g>
-                </svg>
-              <span class="visually-hidden">Exit</span>
+                </svg>              
             </a>
           </div>
           <div class="user-links-list">
@@ -145,22 +142,24 @@
         <section class="filter-output">
           <div class="sorting-tab sandy-bg">
             <h3 class="filter-title">Сортировка:</h3>
-            <ul class="sorting-list">
-              <li class="sorting-active">
-                <span>по цене</span>
-              </li>
-              <li>по типу</li>
-              <li>по функционалу</li>
-            </ul>
+            <a class="sorting-active by-price">по цене</a>
+            <a class="by-type" href="#">по типу</a>
+            <a href="#">по функционалу</a>
             <div class="direction">
-              <span class="ascending active">по-возрастанию</span>
-              <span class="descending passive">по-убыванию</span>
+              <a class="ascending active">по-возрастанию</a>
+              <a class="descending passive">по-убыванию</a>
             </div>
 
           </div>
           <ul class="itemcards-list">
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_3000.png" width="218" height="170" alt="Image: Bosch BFG 3000">
+              <div class="hover-buy-n-bookmarks" href="#">
+                <a class="buy-button" href="#">КУПИТЬ</a>
+                <a class="bookmark-button" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Image: Bosch BFG 3000">
+              </a>
               <h4 class="item-title">
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-brand">Bosch</span>
@@ -168,13 +167,12 @@
               </h4>
               <div class="price-old">22500 р.</div>
               <div class="price-current">15500 р.</div>
-              <div class="hover-buy-n-bookmarks">
-                <a class="buy-button" href="#">КУПИТЬ</a>
-                <a class="bookmark-button" href="#">В ЗАКЛАДКИ</a>
-              </div>
+
             </li>
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_6000.png" width="218" height="170" alt="Image: Bosch BFG 6000">
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="Image: Bosch BFG 6000">
+              </a>
               <h4 class="item-title">
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-brand">Bosch</span>
@@ -188,7 +186,9 @@
               </div>
             </li>
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_2000.png" width="218" height="170" alt="Image: Bosch BFG 2000">                <!-- Нью-флаг указать в цсс?-->
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="Image: Bosch BFG 2000">                <!-- Нью-флаг указать в цсс?-->
+              </a>
               <h4 class="item-title">
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-brand">Bosch</span>
@@ -203,7 +203,9 @@
               </div>
             </li>
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_3000.png" width="218" height="170" alt="Image: Bosch BFG 3000">
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Image: Bosch BFG 3000">
+              </a>
               <h4 class="item-title">
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-brand">Bosch</span>
@@ -217,7 +219,9 @@
               </div>
             </li>
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_6000.png" width="218" height="170" alt="Image: Bosch BFG 6000">
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="Image: Bosch BFG 6000">
+              </a>
               <h4 class="item-title">
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-brand">Bosch</span>
@@ -232,21 +236,25 @@
               </div>
             </li>
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_2000.png" width="218" height="170" alt="Image: Bosch BFG 2000">
-              <h4 class="item-title">
-                <span class="catalog-category">Перфоратор</span>
-                <span class="catalog-brand">Bosch</span>
-                <span class="catalog-model">BFG 2000</span>
-              </h4>
-              <div class="price-old"></div>
-              <div class="price-current">12500 Р.</div>
-              <div class="hover-buy-n-bookmarks">
-                <a href="#" class="buy-button">КУПИТЬ</a>
-                <a href="#" class="bookmark-button">В ЗАКЛАДКИ</a>
-              </div>
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="Image: Bosch BFG 2000">
+              </a>
+                <h4 class="item-title">
+                  <span class="catalog-category">Перфоратор</span>
+                  <span class="catalog-brand">Bosch</span>
+                  <span class="catalog-model">BFG 2000</span>
+                </h4>
+                <div class="price-old"></div>
+                <div class="price-current">12500 Р.</div>
+                <div class="hover-buy-n-bookmarks">
+                  <a href="#" class="buy-button">КУПИТЬ</a>
+                  <a href="#" class="bookmark-button">В ЗАКЛАДКИ</a>
+                </div>
             </li>
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_3000.png" width="218" height="170" alt="Image: Bosch BFG 3000">
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Image: Bosch BFG 3000">
+              </a>
               <h4 class="item-title">
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-brand">Bosch</span>
@@ -261,7 +269,9 @@
               </div>
             </li>
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_6000.png" width="218" height="170" alt="Image: Bosch BFG 6000">
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="Image: Bosch BFG 6000">
+              </a>
               <h4 class="item-title">
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-brand">Bosch</span>
@@ -275,7 +285,9 @@
               </div>
             </li>
             <li class="itemcard">
-              <img class="item-photo" src="img/Bosch_BFG_2000.png" width="218" height="170" alt="Image: Bosch BFG 2000">
+              <a href="#">
+                <img class="item-photo" src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="Image: Bosch BFG 2000">
+              </a>
               <h4 class="item-title">
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-brand">Bosch</span>
@@ -313,9 +325,9 @@
     <div class="footer-dark-blue">
       <div class=" designwidth footer-dark-blue">
         <div class="left-footer">
-          <a class="main-logo footer-logo" href="index.html"><img alt="Логотип «Техномарт»" width="141" height="23" src="img/logo.svg"></a>
+          <a class="footer-logo" href="index.html"><img alt="Логотип «Техномарт»" width="141" height="23" src="img/logo.svg"></a>
           <p class="left-footer-adress" aria-label="Место нахождения и телефон">
-            г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             +7 (812) 555-05-55
           </p>
         </div>
@@ -349,49 +361,33 @@
           </div>
           <div class="creator">
             <div>
-              <b>Обратная связь: </b><br>
+              <b>Обратная связь: </b>
               <a class="footer-link mailto-button">mail@htmlacademy.ru</a>
             </div>
             <div class="developer">
-              <b>Разработано 	&#8212; </b><br>
+              <b>Разработано 	&#8212; </b>
               <a class="footer-link web-address" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  </footer> 
   <section class="popup  popup-hidden buy-dialog">
-    <form class="" action="https://echo.htmlacademy.ru">
+    
       <button class="cross-button popup-close" type="button"><span>Закрыть</span></button>
       <div class="buy-window">
         <div class="buypopup-top">
-          <h2 class="popup-title">Товар добавлен в корзину</h2>
+          <h2 class="popup-title">Товар добавлен в корзину!</h2>
         </div>
         <div class="buy-buttons">
           <a class="button red-button" href="#">Оформить заказ</a>
-          <a class="white-button popup-button" href="catalog.html">Продолжить покупки</a>
+          <button class="white-button buy-continue" type="button">Продолжить покупки</button>
         </div>
       </div>
-    </form>
+   
   </section>
-  <script>
-    var buypop = document.querySelector(".buy-button");
-    var buypopup = document.querySelector(".buy-dialog");
-    var closebuy = buypopup.querySelector(".cross-button");
-
-
-    buypop.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buypopup.classList.remove("popup-hidden");
-    });
-    closebuy.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      buypopup.classList.add("popup-hidden");
-    });
-
-  </script>
+    <script src="js/javascript-cat.js"></script>
 </body>
 </html>
 

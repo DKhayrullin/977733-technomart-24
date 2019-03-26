@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -12,15 +13,16 @@
   <header class="main-header">
     <div class="header-topmenu">
       <div class="designwidth topmenu">
-        <a class="main-logo header-logo"><img alt="Логотип «Техномарт»" width="111" height="18" src="img/logo.svg"></a>
-        <form class="search-form" action="https://echo.htmlacademy.ru">
+        <a class="main-logo">
+          <img width="110" height="18" src="img/logo.svg" alt="Логотип «Техномарт»">
+        </a>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <input class="search-field" id="search-field" type="search" name="search" placeholder="Поиск:">
         </form>
         <div class="header-order">
-          <a class="button header-order-bookmarks-empty" href="bookmarks.html"><span>Закладки: 0</span></a>
-          <a class="button header-order-cart-empty" href="cart.html">Корзина: 0</a>
-          <a class="button header-order-checkout-empty" href="checkout.html">Оформить заказ</a>
-
+          <a class="header-order-bookmarks-empty" href="bookmarks.html"><span>Закладки: 0</span></a>
+          <a class="header-order-cart-empty" href="cart.html">Корзина: 0</a>
+          <a class="header-order-checkout-empty" href="checkout.html">Оформить заказ</a>
         </div>
       </div>
     </div>
@@ -28,9 +30,8 @@
       <div class="designwidth header-middlemenu">
         <h2 class="header-title">Интернет-магазин строительных материалов и&#160;инструментов для ремонта</h2>
         <div class="header-contacts">
-          <span class="header-lightbg-phone" aria-label="Наш контактный телефон">+7 (812) 555-05-55</span><br>
+          <span class="header-lightbg-phone" aria-label="Наш контактный телефон">+7 (812) 555-05-55</span>
           <span class="header-lightbg-adress" aria-label="Наш адрес">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-
         </div>
         <section class="user-navigation">
           <h2 class="visually-hidden">Навигация пользователя</h2>
@@ -87,10 +88,9 @@
           <button class="slider-previous just-button" type="button">Назад</button>
           <button class="slider-next just-button" type="button">Вперед</button>
           <a class="red-button slider-button" href="catalog.html">Открыть каталог</a>
-          <div class="">
-            <span class="white-round one"></span>
-            <span class="white-round two"></span>
-          </div>
+          <span class="white-round one"></span>
+          <span class="white-round two"></span>
+
         </div>
 
         <div class="profit profit-discount">
@@ -111,52 +111,56 @@
       <ul class="popular-goods-list">
         <li class="itemcard">
           <a href="catalog.html">
-            <img class="item-photo" src="img/bosch_bfg_9000.png" width="218" height="170" alt="Image: Bosch BFG 9000">
-            <h4 class="item-title">
-              <span class="catalog-category">Перфоратор</span>
-              <span class="catalog-brand">Bosch</span>
-              <span class="catalog-model">BFG 9000</span>
-            </h4>
-            <div class="price-old">32500 р.</div>
-            <div class="price-current">25500 р.</div>
+            <img class="item-photo" src="img/bosch_bfg_9000.jpg" width="218" height="170" alt="Image: Bosch BFG 9000">
           </a>
+          <h4 class="item-title">
+            <span class="catalog-category">Перфоратор</span>
+            <span class="catalog-brand">Bosch</span>
+            <span class="catalog-model">BFG 9000</span>
+          </h4>
+          <div class="price-old">32500 р.</div>
+          <div class="price-current">25500 р.</div>
         </li>
         <li class="itemcard">
           <a href="catalog.html">
-            <img class="item-photo" src="img/bosch_bfg_3000.png" width="218" height="170" alt="Image: Bosch BFG 3000">
-            <h4 class="item-title">
-              <span class="catalog-category">Перфоратор</span>
-              <span class="catalog-brand">Bosch</span>
-              <span class="catalog-model">BFG 3000</span>
-            </h4>
-            <div class="price-old">22500 р.</div>
-            <div class="price-current">15500 р.</div>
+            <img class="item-photo" src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Image: Bosch BFG 3000">
           </a>
+          <h4 class="item-title">
+            <span class="catalog-category">Перфоратор</span>
+            <span class="catalog-brand">Bosch</span>
+            <span class="catalog-model">BFG 3000</span>
+          </h4>
+          <div class="price-old">22500 р.</div>
+          <div class="price-current">15500 р.</div>
+
         </li>
         <li class="itemcard">
           <a href="catalog.html">
-            <img class="item-photo" src="img/bosch_bfg_6000.png" width="218" height="170" alt="Image: Bosch BFG 6000">
-            <h4 class="item-title">
-              <span class="catalog-category">Перфоратор</span>
-              <span class="catalog-brand">Bosch</span>
-              <span class="catalog-model">BFG 6000</span>
-            </h4>
-            <div class="price-old">30500 р.</div>
-            <div class="price-current">25500 р.</div>
+            <img class="item-photo" src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="Image: Bosch BFG 6000">
           </a>
+
+          <h4 class="item-title">
+            <span class="catalog-category">Перфоратор</span>
+            <span class="catalog-brand">Bosch</span>
+            <span class="catalog-model">BFG 6000</span>
+          </h4>
+          <div class="price-old">30500 р.</div>
+          <div class="price-current">25500 р.</div>
+
         </li>
         <li class="itemcard">
           <a href="catalog.html">
-            <img class="item-photo" src="img/bosch_bfg_2000.png" width="218" height="170" alt="Image: Bosch BFG 2000">
-            <h4 class="item-title">
-              <span class="catalog-category">Перфоратор</span>
-              <span class="catalog-brand">Bosch</span>
-              <span class="catalog-model">BFG 2000</span>
-            </h4>
-            <div class="new-flag"></div>
-            <div class="price-old"></div>
-            <div class="price-current">25500 р.</div>
+            <img class="item-photo" src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="Image: Bosch BFG 2000">
           </a>
+          <h4 class="item-title">
+            <span class="catalog-category">Перфоратор</span>
+            <span class="catalog-brand">Bosch</span>
+            <span class="catalog-model">BFG 2000</span>
+          </h4>
+          <div class="new-flag"></div>
+          <div class="price-old"></div>
+          <div class="price-current">25500 р.</div>
+
         </li>
       </ul>
     </section>
@@ -179,8 +183,8 @@
     <section class="slider-services">
       <div class="designwidth-noright">
         <h2>Сервисы</h2>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами!<br>
+        <p class="slider-subheader">
+          Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <div class="slider-body">
@@ -227,7 +231,7 @@
             строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="transport-agents">
@@ -239,9 +243,9 @@
         </section>
         <section class="main-contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами,<br> заехав в наш офис</p>
-          <img class="minimap" src="img/minimap.png" width="300" height="158" alt="Большая конюшенная, 19">
-          <a class="red-button write-us" href="#">Заблудились? Напишите нам</a>
+          <p>Вы можете забрать товар сами, заехав в наш офис</p>
+          <img class="minimap" src="img/minimap.png" width="300" height="158" alt="ул.Большая конюшенная, 19">
+          <a class="red-button write-us" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
@@ -250,9 +254,9 @@
     <div class="footer-dark-blue">
       <div class=" designwidth footer-dark-blue">
         <div class="left-footer">
-          <a class="main-logo footer-logo"><img alt="Логотип «Техномарт»" width="141" height="23" src="img/logo.svg"></a>
+          <a class="footer-logo"><img alt="Логотип «Техномарт»" width="138" height="23" src="img/logo.svg"></a>
           <p class="left-footer-adress" aria-label="Место нахождения и телефон">
-            г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             +7 (812) 555-05-55
           </p>
         </div>
@@ -286,11 +290,11 @@
           </div>
           <div class="creator">
             <div>
-              <b>Обратная связь: </b><br>
+              <b>Обратная связь: </b>
               <a class="footer-link mailto-button">mail@htmlacademy.ru</a>
             </div>
             <div class="developer">
-              <b>Разработано 	&#8212; </b><br>
+              <b>Разработано 	&#8212; </b>
               <a class="footer-link web-address" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </div>
@@ -298,12 +302,9 @@
       </div>
     </div>
   </footer>
-
-
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
   <div class="popup popup-hidden write-us-form">
     <button class="cross-button popup-close" type="button"></button>
-    <form action="#"> <!--post не проходит валидацию. ПОчему?-->
+    <form action="#" method="post">      
       <div class="two-columns">
         <p class="form-p">
           <label for="Author-name-field">Ваше имя:</label>
@@ -318,7 +319,6 @@
         <label for="mail-body-field">Текст письма:</label>
         <textarea class="popup-input" id="mail-body-field" name="mail-body" placeholder="В свободной форме"></textarea>
       </div>
-
       <div class="greybg">
         <input class="button red-button" type="submit" value="Отправить">
       </div>
@@ -326,101 +326,7 @@
   </div>
   <div class="popup popup-hidden map-popup">
     <button class="cross-button" type="button" name="popup-close">Закрыть</button>
-
   </div>
-  <script>
-    var objMapBut = document.querySelector(".minimap");
-
-    var objWriteBut = document.querySelector(".write-us");
-    var objWriteWin = document.querySelector(".write-us-form");
-    var objMapPop = document.querySelector(".map-popup");
-    var objMapClose = objMapPop.querySelector(".cross-button");
-    var objWriteClose = objWriteWin.querySelector(".cross-button");
-
-    var objSlidePrev = document.querySelector(".slider-previous");
-    var objSlideNext = document.querySelector(".slider-next");
-    var objSlidePerf = document.querySelector(".perforator-slide");
-    var objSlideDrill = document.querySelector(".drill-slide");
-
-    var objDeliveryBut = document.querySelector(".delivery-button");
-    var objWarantyBut = document.querySelector(".waranty-button");
-    var objCreditBut = document.querySelector(".credit-button");
-    var objDeliveryWin = document.querySelector(".delivery-slider");
-    var objWarantyWin = document.querySelector(".waranty-slider");
-    var objCreditWin = document.querySelector(".credit-slider");
-
-
-
-    objMapBut.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      objMapPop.classList.remove("popup-hidden");
-    });
-    objMapClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      objMapPop.classList.add("popup-hidden")
-    });
-
-    objWriteBut.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      objWriteWin.classList.remove("popup-hidden");
-    });
-    objWriteClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      objWriteWin.classList.add("popup-hidden");
-    });
-
-    objSlidePrev.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      objSlideDrill.classList.toggle("cat-slide-off");
-      objSlidePerf.classList.toggle("cat-slide-off");
-    });
-    objSlideNext.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      objSlideDrill.classList.toggle("cat-slide-off");
-      objSlidePerf.classList.toggle("cat-slide-off");
-    });
-
-
-    objDeliveryBut.addEventListener("click", function (evt) {
-      evt.preventDefault();
-
-      objWarantyBut.classList.remove("slider-active");
-      objCreditBut.classList.remove("slider-active");
-      objDeliveryBut.classList.add("slider-active");
-
-
-      objDeliveryWin.classList.remove("slider-active");
-      objWarantyWin.classList.remove("slider-active");
-      objCreditWin.classList.remove("slider-active");
-
-      objDeliveryWin.classList.add("slider-active");
-    });
-
-    objWarantyBut.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      objDeliveryBut.classList.remove("slider-active");
-      objWarantyBut.classList.add("slider-active");
-      objCreditBut.classList.remove("slider-active");
-
-      objDeliveryWin.classList.remove("slider-active");
-      objWarantyWin.classList.remove("slider-active");
-      objCreditWin.classList.remove("slider-active");
-
-      objWarantyWin.classList.add("slider-active");
-    });
-
-    objCreditBut.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      objDeliveryBut.classList.remove("slider-active");
-      objWarantyBut.classList.remove("slider-active");
-      objCreditBut.classList.add("slider-active");
-
-      objDeliveryWin.classList.remove("slider-active");
-      objWarantyWin.classList.remove("slider-active");
-      objCreditWin.classList.remove("slider-active");
-
-      objCreditWin.classList.add("slider-active");
-    });
-  </script>
+  <script src="js/javascript.js"></script>
 </body>
 </html>
