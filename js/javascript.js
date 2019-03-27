@@ -37,6 +37,7 @@ objMapClose.addEventListener("click", function (evt) {
 //Write-us
 objWriteBut.addEventListener("click", function (evt) {
   evt.preventDefault();
+  objWriteWin.classList.add("animation1");
   objWriteWin.classList.remove("popup-hidden");
 });
 objWriteClose.addEventListener("click", function (evt) {
@@ -87,17 +88,6 @@ objCreditBut.addEventListener("click", function (evt) {
   objCreditWin.classList.remove("slider-active");
   objCreditWin.classList.add("slider-active");
 });
-//WHY U DO'T WORK?
-//window.addEventListener("keydown", function (evt1) {
-//  if (evt1.keyCode === 27) {
-//    if (objMapPop.classList.contains("cross-button")) { //objMapPop.classList.contains("cross-button")) = false
-//      objMapPop.classList.add("popup-hidden");
-//    }
-    //else if (objWriteWin.classList.contains("cross-button")) {
-    //  objWriteWin.classList.add("popup-hidden");
-    //}
-//  }
-//});
 window.addEventListener("keydown", function (evt2) {
   if (evt2.keyCode === 27) {
     if (!objWriteWin.classList.contains("popup-hidden")) {
@@ -113,10 +103,12 @@ window.addEventListener("keydown", function (evt2) {
     }
   }
 });
-objWriteContSub.addEventListener("click", function (evt) {
+objWriteContSub.addEventListener("click", function (evt) {  
   if (!objWriteContName.value || !objWriteContMail.value || !objWriteContBody.value) {
     evt.preventDefault();
+    objWriteWin.classList.remove("animation2");
     console.log("Нужно заполнить все поля!");
+    objWriteWin.offsetWidth = objWriteWin.offsetWidth;
     objWriteWin.classList.add("animation2");
-  }   
+  }  
 });
